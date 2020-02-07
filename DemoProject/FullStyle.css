@@ -2,7 +2,6 @@
     font-family: Arial, sans-serif;
     font-size: 2em;
     font-weight: bold;
-    position: top;
 }
 
     .a .b {
@@ -11,10 +10,10 @@
         -webkit-text-stroke: 0.01em #d6d6c2;
         filter: progid:DXImageTransform.Microsoft.Glow(Color=#d6d6c2,Strength=1);
         text-shadow: 0.13em -0.13em 0px #d6d6c2;
-        letter-spacing: -0.05em;
+        letter-spacing: -0.05em ;
     }
 
-input[type="text"], input[type="password"], input[type="email"] {
+input[type="text"], input[type="password"], input[type="email"],input[type=number] input[type="tel"], input[type=date] {
     border: none;
     border-bottom: 1px solid #fff;
     background: transparent;
@@ -46,17 +45,17 @@ input[type="submit"]:hover {
     background: #0097a7;
 }
 .box {
+    margin-left:7em;
     background: #d6d6c2;
     color: black;
-    top: 55%;
-    left: 20%;
-    position: fixed;
-    transform: translate(-50%,-50%);
+    position: absolute;
     box-sizing: border-box;
     padding: 70px 30px;
 }
-
-
+.Master{
+    word-spacing:15px;
+    margin-top:1px;
+}
 
 .user {
     width: 100px;
@@ -86,8 +85,6 @@ a {
     line-height: 20px;
     color: #069818;
 }
-
-
     a:hover {
         color: red;
     }

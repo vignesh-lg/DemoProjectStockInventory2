@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="DemoProject.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" type="text/css" href="FullStyle.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+        <div class="a">
+        <span class="b">
+            <h1>
+                <marquee>
+                Online Stock Inventory and Billing System</h1>
+            </marquee>
+</span>
+    </div >
+    <form  id="form1" runat="server">
+            <div class="Master"align="right">
+                <asp:HyperLink ID="HyperLink1" runat="server" Text="Home" NavigateUrl="~/WebForm4.aspx"></asp:HyperLink>
+                <asp:HyperLink ID="linkSignIn" runat="server" Text="Signin" NavigateUrl="~/WebForm3.aspx"></asp:HyperLink>
+                <asp:HyperLink ID="linkSignUp" runat="server" Text="Register" NavigateUrl="~/WebForm2.aspx"></asp:HyperLink>
+                 <asp:HyperLink ID="HyperLink2" runat="server" Text="GridView" NavigateUrl="~/WebForm6.aspx"></asp:HyperLink>
+            </div>
+        <div class="box">
+               <img src="Images/user.png" class="user">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body> 
+</html>

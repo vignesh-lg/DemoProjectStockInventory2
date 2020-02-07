@@ -1,22 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="DemoProject.WebForm2" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="DemoProject.WebForm2" %>
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Registration Page</title>
-    <link rel="stylesheet" type="text/css" href="FullStyle.css" />
-    <div class="a">
-        <span class="b">
-            <h1>
-                <marquee>
-                Online Stock Inventory and Billing System</h1>
-            </marquee>
-</span>
-    </div>
-</head>
-<body>
-    <form class="box" id="form1" runat="server">
+<asp:Content ID="contentHead" runat="server" ContentPlaceHolderID="head">
+</asp:Content>
+<asp:Content ID="contentPlaceHolderLogin" runtat="server" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+  <div class="SignUp">
         <table border="0">
             <tr>
                 <td>Username</td>
@@ -57,7 +45,6 @@
                         <asp:ListItem>Female</asp:ListItem>
                         <asp:ListItem>Other</asp:ListItem>
                     </asp:RadioButtonList></td>
-
             </tr>
             <tr>
                 <td>State </td>
@@ -102,7 +89,7 @@
             <tr>
                 <td>CellNumber</td>
                 <td>
-                    <asp:TextBox ID="CellNumber" placeholder="Enter CellNumber" runat="server" TextMode="Phone" required=""></asp:TextBox>
+                    <asp:TextBox ID="CellNumber" placeholder="Enter CellNumber" runat="server" required=""></asp:TextBox>
                     <asp:RegularExpressionValidator Display="Dynamic" ID="RegularExpressionValidatorNumber" runat="server"  
 ControlToValidate="CellNumber" ErrorMessage="Invalid Mobile Number"  
 ValidationExpression="[6789]\d{9}"></asp:RegularExpressionValidator>  
@@ -117,13 +104,15 @@ ValidationExpression="[6789]\d{9}"></asp:RegularExpressionValidator>
                 <td>Registration Number</td>
                 <td>
                     <asp:TextBox ID="rnum" placeholder="Enter RegNum" runat="server" required=""></asp:TextBox>
-                    <asp:RegularExpressionValidator Display="Dynamic" ControlToValidate="address" ID="RegularExpressionValidator2" ValidationExpression="^[\w-\.]{5,15}$" runat="server" ErrorMessage="Minimum 5 and Maximum 8 characters required."></asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator Display="Dynamic" ControlToValidate="rnum" ID="RegularExpressionValidator2" ValidationExpression="^[\w-\.]{5,15}$" runat="server" ErrorMessage="Minimum 5 and Maximum 8 characters required."></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
                 <td>Password</td>
                 <td>
-                    <asp:TextBox ID="password" placeholder="Enter password" runat="server" TextMode="Password" required=""></asp:TextBox></td>
+                    <asp:TextBox ID="password" placeholder="Enter password" runat="server" TextMode="Password" required=""></asp:TextBox>
+                     <asp:RegularExpressionValidator Display="Dynamic" ControlToValidate="password" ID="RegularExpressionValidator3" ValidationExpression="([0-9-A-Z-a-z-!@#$%^&*()_+=\[{\]};:<>|./?,-].{8,15})" runat="server" ErrorMessage="Password must contain a number,special character,uppercase, lowercase"></asp:RegularExpressionValidator>
+                </td>
             </tr>
             <tr>
                 <td>Retype Password</td>
@@ -141,6 +130,5 @@ ValidationExpression="[6789]\d{9}"></asp:RegularExpressionValidator>
         </table>
 
         <asp:Button ID="button" Text="Register" runat="server" OnClick="button1" />
-    </form>
-</body>
-</html>
+     </div>
+</asp:Content>
