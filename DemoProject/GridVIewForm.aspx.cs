@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Data;
+using System.Text.RegularExpressions;
 
 namespace DemoProject
 {
@@ -19,6 +20,29 @@ namespace DemoProject
             {
                 PopulateGridView();
             }
+        }
+         protected void Search(object sender, EventArgs e)
+        {
+            DataTable dataTable = new DataTable();
+            using (SqlConnection myConnection = new SqlConnection(sqlConnection))
+            {
+                myConnection.Open();
+                string sql = "User_Procedure_Search";
+                SqlCommand sqlCommand = new SqlCommand(sql, myConnection);
+                sqlCommand.CommandType = CommandType.StoredProcedure;
+                sqlCommand.Parameters.AddWithValue("@id", txtSearch.Text);
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
+                sqlDataAdapter.Fill(dataTable);
+            }
+            if (dataTable.Rows.Count > 0)
+            {
+                GridView1.DataSource = dataTable;
+                GridView1.DataBind();
+            }
+        }
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
         void PopulateGridView()
         {
@@ -37,7 +61,7 @@ namespace DemoProject
                 GridView1.DataSource = dataTable;
                 GridView1.DataBind();
             }
-            else
+            else if(dataTable.Rows.Count==0)
             {
                 dataTable.Rows.Add(dataTable.NewRow());
                 GridView1.DataSource = dataTable;
@@ -46,14 +70,9 @@ namespace DemoProject
                 GridView1.Rows[0].Cells[0].ColumnSpan = dataTable.Columns.Count;
                 GridView1.Rows[0].Cells[0].Text = "No Data Found";
                 GridView1.Rows[0].Cells[0].HorizontalAlign = HorizontalAlign.Center;
+
             }
         }
-
-        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             if (e.CommandName.Equals("AddNew"))
@@ -64,7 +83,6 @@ namespace DemoProject
                     string sql = "UserData_Procedure";
                     SqlCommand sqlCommand = new SqlCommand(sql, myConnection);
                     sqlCommand.CommandType = CommandType.StoredProcedure;
-                    sqlCommand.Parameters.AddWithValue("@UserName", (GridView1.FooterRow.FindControl("userNameFooter") as TextBox).Text.Trim());
                     sqlCommand.Parameters.AddWithValue("@CustomerFirstName", (GridView1.FooterRow.FindControl("firstNameFooter") as TextBox).Text.Trim());
                     sqlCommand.Parameters.AddWithValue("@CustomerSecondName", (GridView1.FooterRow.FindControl("secondNameFooter") as TextBox).Text.Trim());
                     sqlCommand.Parameters.AddWithValue("@Gender", (GridView1.FooterRow.FindControl("genderFooter") as TextBox).Text.Trim());
@@ -152,5 +170,12 @@ namespace DemoProject
             }
 
         }
+        protected void OnPageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            GridView1.PageIndex = e.NewPageIndex;
+            PopulateGridView();
+        }
+
+       
     }
 }

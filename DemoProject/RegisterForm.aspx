@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="DemoProject.WebForm2" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/OSIBSMaster.Master" AutoEventWireup="true" CodeBehind="RegisterForm.aspx.cs" Inherits="DemoProject.WebForm2" %>
 
 
 <asp:Content ID="contentHead" runat="server" ContentPlaceHolderID="head">

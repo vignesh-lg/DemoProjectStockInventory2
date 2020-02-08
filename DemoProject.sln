@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoProject", "DemoProject\DemoProject.csproj", "{9EFDC10E-47EB-425F-8B0E-2EA6F9E338D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineBillingAndInventory", "DemoProject\OnlineBillingAndInventory.csproj", "{9EFDC10E-47EB-425F-8B0E-2EA6F9E338D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineInventoryAndBilling.BL", "OnlineInventoryAndBilling.BL\OnlineInventoryAndBilling.BL.csproj", "{F7AE7173-8E90-438C-AB32-0612DE1998AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineInventoryandBIlling.DAL", "OnlineInventoryandBIlling.DAL\OnlineInventoryandBIlling.DAL.csproj", "{98D03FDC-CED6-4CDF-902E-1EE52846240A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineInventoryAndBilling.Entity", "OnlineInventoryAndBilling.Entity\OnlineInventoryAndBilling.Entity.csproj", "{D2794C71-7413-4594-93FA-47F07389BF32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineInventoryAndBilling.Common", "OnlineInventoryAndBilling.Common\OnlineInventoryAndBilling.Common.csproj", "{44C93FCE-5D50-485C-B378-06BBBBF4A5D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{9EFDC10E-47EB-425F-8B0E-2EA6F9E338D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EFDC10E-47EB-425F-8B0E-2EA6F9E338D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EFDC10E-47EB-425F-8B0E-2EA6F9E338D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7AE7173-8E90-438C-AB32-0612DE1998AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7AE7173-8E90-438C-AB32-0612DE1998AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7AE7173-8E90-438C-AB32-0612DE1998AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7AE7173-8E90-438C-AB32-0612DE1998AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98D03FDC-CED6-4CDF-902E-1EE52846240A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98D03FDC-CED6-4CDF-902E-1EE52846240A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98D03FDC-CED6-4CDF-902E-1EE52846240A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98D03FDC-CED6-4CDF-902E-1EE52846240A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2794C71-7413-4594-93FA-47F07389BF32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2794C71-7413-4594-93FA-47F07389BF32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2794C71-7413-4594-93FA-47F07389BF32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2794C71-7413-4594-93FA-47F07389BF32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44C93FCE-5D50-485C-B378-06BBBBF4A5D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C93FCE-5D50-485C-B378-06BBBBF4A5D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44C93FCE-5D50-485C-B378-06BBBBF4A5D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44C93FCE-5D50-485C-B378-06BBBBF4A5D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

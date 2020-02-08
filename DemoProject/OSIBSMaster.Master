@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="DemoProject.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="OSIBSMaster.Master.cs" Inherits="DemoProject.Site1" %>
 
 <!DOCTYPE html>
 
@@ -21,10 +21,10 @@
     </div >
     <form  id="form1" runat="server">
             <div class="Master"align="right">
-                <asp:HyperLink ID="HyperLink1" runat="server" Text="Home" NavigateUrl="~/WebForm4.aspx"></asp:HyperLink>
-                <asp:HyperLink ID="linkSignIn" runat="server" Text="Signin" NavigateUrl="~/WebForm3.aspx"></asp:HyperLink>
-                <asp:HyperLink ID="linkSignUp" runat="server" Text="Register" NavigateUrl="~/WebForm2.aspx"></asp:HyperLink>
-                 <asp:HyperLink ID="HyperLink2" runat="server" Text="GridView" NavigateUrl="~/WebForm6.aspx"></asp:HyperLink>
+                <asp:HyperLink ID="HyperLink1" runat="server" Text="Home" NavigateUrl="~/HomeForm.aspx"></asp:HyperLink>
+                <asp:HyperLink ID="linkSignIn" runat="server" Text="Signin" NavigateUrl="~/LoginForm.aspx"></asp:HyperLink>
+                <asp:HyperLink ID="linkSignUp" runat="server" Text="Register" NavigateUrl="~/RegisterForm.aspx"></asp:HyperLink>
+                 <asp:HyperLink ID="HyperLink2" runat="server" Text="GridView" NavigateUrl="~/GridVIewForm.aspx"></asp:HyperLink>
             </div>
         <div class="box">
                <img src="Images/user.png" class="user">
