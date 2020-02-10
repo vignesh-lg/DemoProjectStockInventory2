@@ -49,9 +49,9 @@
       <Project>{44c93fce-5d50-485c-b378-06bbbbf4a5d9}</Project>
       <Name>OnlineInventoryAndBilling.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\OnlineInventoryandBIlling.DAL\OnlineInventoryandBIlling.DAL.csproj">
-      <Project>{98d03fdc-ced6-4cdf-902e-1ee52846240a}</Project>
-      <Name>OnlineInventoryandBIlling.DAL</Name>
+    <ProjectReference Include="..\OnlineInventoryAndBilling.DAL\OnlineInventoryAndBilling.DAL.csproj">
+      <Project>{deeb8d63-215a-4c62-a5c5-1478093abfc7}</Project>
+      <Name>OnlineInventoryAndBilling.DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\OnlineInventoryAndBilling.Entity\OnlineInventoryAndBilling.Entity.csproj">
       <Project>{d2794c71-7413-4594-93fa-47f07389bf32}</Project>

@@ -10,7 +10,7 @@
             <tr>
                 <td>Username</td>
                 <td>
-                    <asp:TextBox ID="uname1" placeholder="Enter Username" runat="server"></asp:TextBox></td>
+                    <asp:TextBox ID="uname" placeholder="Enter Username" runat="server"></asp:TextBox></td>
             </tr>
             <tr>
                 <td>Password</td>

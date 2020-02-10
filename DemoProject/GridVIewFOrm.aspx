@@ -13,20 +13,18 @@
                 <asp:BoundField DataField="Personid"
                     HeaderText="User ID"
                     ReadOnly="true"/>
-                 <asp:BoundField DataField="UserName"
-                    HeaderText="User Name"
-                    ReadOnly="true"/>
-                <%--<asp:TemplateField HeaderText="User Name">
+                
+                <asp:TemplateField HeaderText="User Name">
                     <ItemTemplate>
                         <asp:Label Text='<%# Eval("UserName") %>' runat="server" />
                     </ItemTemplate>
                     <EditItemTemplate>
-                        <asp:label ID="userNameEditor" Text="Cannot Edit Again" required="" placeHolder="UserName" runat="server" />
+                        <asp:TextBox ID="userNameEditor" Text='<%# Eval("UserName") %>' required="" placeHolder="UserName" runat="server" />
                     </EditItemTemplate>
                     <FooterTemplate>
                         <asp:label Text="AutoUserName" runat="server" />
                     </FooterTemplate>
-                </asp:TemplateField>--%>
+                </asp:TemplateField>
                 <asp:TemplateField HeaderText="First Name">
                     <ItemTemplate>
                         <asp:Label Text='<%# Eval("CustomerFirstName") %>' runat="server" />
@@ -35,7 +33,7 @@
                         <asp:TextBox ID="firstNameEditor" required="" placeHolder="CustomerFirstName"  Text='<%# Eval("CustomerFirstName") %>' runat="server" />
                     </EditItemTemplate>
                     <FooterTemplate>
-                        <asp:TextBox ID="firstNameFooter" required="" placeHolder="CustomerFirstName"  runat="server" />
+                        <asp:TextBox ID="firstNameFooter"  placeHolder="CustomerFirstName"  runat="server" />
                     </FooterTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Second Name">
@@ -46,7 +44,7 @@
                         <asp:TextBox ID="secondNameEditor" required="" placeHolder="CustomerSecondName"  Text='<%# Eval("CustomerSecondName") %>' runat="server" />
                     </EditItemTemplate>
                     <FooterTemplate>
-                        <asp:TextBox ID="secondNameFooter" required="" placeHolder="CustomerSecondName"  runat="server" />
+                        <asp:TextBox ID="secondNameFooter"  placeHolder="CustomerSecondName"  runat="server" />
                     </FooterTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Gender">
@@ -57,7 +55,7 @@
                         <asp:TextBox ID="genderEditor" required="" placeHolder="gender" Text='<%# Eval("gender") %>' runat="server" />
                     </EditItemTemplate>
                     <FooterTemplate>
-                        <asp:TextBox ID="genderFooter" required="" placeHolder="gender"  runat="server" />
+                        <asp:TextBox ID="genderFooter"  placeHolder="gender"  runat="server" />
                     </FooterTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="State">
@@ -68,7 +66,7 @@
                         <asp:TextBox ID="stateEditor" required="" placeHolder="States"  Text='<%# Eval("States") %>' runat="server" />
                     </EditItemTemplate>
                     <FooterTemplate>
-                        <asp:TextBox ID="stateFooter" required="" placeHolder="States"  runat="server" />
+                        <asp:TextBox ID="stateFooter"  placeHolder="States"  runat="server" />
                     </FooterTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="City">
@@ -79,7 +77,7 @@
                         <asp:TextBox ID="cityEditor"  required="" placeHolder="City"  Text='<%# Eval("City") %>' runat="server" />
                     </EditItemTemplate>
                     <FooterTemplate>
-                        <asp:TextBox ID="cityFooter" required="" placeHolder="City"  runat="server" />
+                        <asp:TextBox ID="cityFooter"  placeHolder="City"  runat="server" />
                     </FooterTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Permenant Address">
@@ -90,7 +88,7 @@
                         <asp:TextBox ID="addressEditor" required="" placeHolder="PermenantAddress"  Text='<%# Eval("PermenantAddress") %>' runat="server" />
                     </EditItemTemplate>
                     <FooterTemplate>
-                        <asp:TextBox ID="addressFooter" required="" placeHolder="PermenantAddress"  runat="server" />
+                        <asp:TextBox ID="addressFooter"  placeHolder="PermenantAddress"  runat="server" />
                     </FooterTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Pin Code">
@@ -101,7 +99,7 @@
                         <asp:TextBox ID="pinCodeEditor" required="" placeHolder="PinCode" Text='<%# Eval("PinCode") %>' runat="server" />
                     </EditItemTemplate>
                     <FooterTemplate>
-                        <asp:TextBox ID="pinCodeFooter" required="" placeHolder="PinCode"  runat="server" />
+                        <asp:TextBox ID="pinCodeFooter" placeHolder="PinCode"  runat="server" />
                     </FooterTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Cell Number">
@@ -112,7 +110,7 @@
                         <asp:TextBox ID="cellNumberEditor" Text='<%# Eval("CellNumber") %>' required="" placeHolder="CellNumber"  runat="server" />
                     </EditItemTemplate>
                     <FooterTemplate>
-                        <asp:TextBox ID="cellNumberFooter" required="" placeHolder="CellNumber"  runat="server" />
+                        <asp:TextBox ID="cellNumberFooter" placeHolder="CellNumber"  runat="server" />
                     </FooterTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="E-Mail">
@@ -123,7 +121,7 @@
                         <asp:TextBox ID="emailEditor" Text='<%# Eval("Email") %>' required="" placeHolder="Email"  runat="server" />
                     </EditItemTemplate>
                     <FooterTemplate>
-                        <asp:TextBox ID="emailFooter" required="" placeHolder="Email"  runat="server" />
+                        <asp:TextBox ID="emailFooter"  placeHolder="Email"  runat="server" />
                     </FooterTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Date Of Birth">
@@ -134,10 +132,10 @@
                         <asp:TextBox ID="dobEditor" Text='<%# Eval("DateOfBirth") %>' required="" placeHolder="DateOfBirth"  runat="server" />
                     </EditItemTemplate>
                     <FooterTemplate>
-                        <asp:TextBox ID="dobFooter" required="" placeHolder="DateOfBirth"  runat="server" />
+                        <asp:TextBox ID="dobFooter"  placeHolder="DateOfBirth"  runat="server" />
                     </FooterTemplate>
                 </asp:TemplateField>
-                <asp:TemplateField HeaderText="Registration Number">
+               <%-- <asp:TemplateField HeaderText="Registration Number">
                     <ItemTemplate>
                         <asp:Label Text='<%# Eval("RegistrationNumber") %>' runat="server" />
                     </ItemTemplate>
@@ -145,9 +143,12 @@
                         <asp:TextBox ID="regNumEditor" Text='<%# Eval("RegistrationNumber") %>' required="" placeHolder="RegistrationNumber"  runat="server" />
                     </EditItemTemplate>
                     <FooterTemplate>
-                        <asp:TextBox ID="regNumFooter" required="" placeHolder="UserName"  runat="server" />
+                        <asp:TextBox ID="regNumFooter" placeHolder="UserName"  runat="server" />
                     </FooterTemplate>
-                </asp:TemplateField>
+                </asp:TemplateField>--%>
+                 <asp:BoundField DataField="RegistrationNumber"
+                    HeaderText="Registration Number"
+                    ReadOnly="true"/>
                 <asp:TemplateField HeaderText="Password">
                     <ItemTemplate>
                         <asp:Label Text='<%# Eval("Passwords") %>' runat="server" />
@@ -156,7 +157,7 @@
                         <asp:TextBox ID="passwordEditor" Text='<%# Eval("Passwords") %>' required="" placeHolder="Passwords"  runat="server" />
                     </EditItemTemplate>
                     <FooterTemplate>
-                        <asp:TextBox ID="passwordFooter" required="" placeHolder="Passwords" runat="server" />
+                        <asp:TextBox ID="passwordFooter" placeHolder="Passwords" runat="server" />
                     </FooterTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField>

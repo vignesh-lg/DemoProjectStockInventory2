@@ -15,22 +15,13 @@ namespace DemoProject
     {
 
         /// <summary>
-        /// uname1 control.
+        /// cfname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox uname1;
-
-        /// <summary>
-        /// uname2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox uname2;
+        protected global::System.Web.UI.WebControls.TextBox cfname;
 
         /// <summary>
         /// regularValidateName control.
@@ -51,13 +42,13 @@ namespace DemoProject
         protected global::System.Web.UI.WebControls.RegularExpressionValidator regularValidateNameSize;
 
         /// <summary>
-        /// uname3 control.
+        /// csname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox uname3;
+        protected global::System.Web.UI.WebControls.TextBox csname;
 
         /// <summary>
         /// RegularExpressionValidatorName control.
@@ -78,13 +69,13 @@ namespace DemoProject
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorSize;
 
         /// <summary>
-        /// email1 control.
+        /// email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox email1;
+        protected global::System.Web.UI.WebControls.TextBox email;
 
         /// <summary>
         /// RegularExpressionValidatorEMail control.
@@ -105,22 +96,22 @@ namespace DemoProject
         protected global::System.Web.UI.WebControls.RadioButtonList gender;
 
         /// <summary>
-        /// State control.
+        /// state control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList State;
+        protected global::System.Web.UI.WebControls.DropDownList state;
 
         /// <summary>
-        /// City control.
+        /// city control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList City;
+        protected global::System.Web.UI.WebControls.DropDownList city;
 
         /// <summary>
         /// address control.
@@ -159,13 +150,13 @@ namespace DemoProject
         protected global::System.Web.UI.WebControls.RegularExpressionValidator YourRegularExpressionValidator;
 
         /// <summary>
-        /// CellNumber control.
+        /// cellNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CellNumber;
+        protected global::System.Web.UI.WebControls.TextBox cellNumber;
 
         /// <summary>
         /// RegularExpressionValidatorNumber control.
@@ -222,13 +213,13 @@ namespace DemoProject
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator3;
 
         /// <summary>
-        /// TextBox1 control.
+        /// confirmpassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox confirmpassword;
 
         /// <summary>
         /// checkbox control.

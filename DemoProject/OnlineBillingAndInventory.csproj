@@ -77,6 +77,7 @@
     <Content Include="Images\edit.png" />
     <Content Include="Images\save.png" />
     <Content Include="Images\user.png" />
+    <Content Include="Validations.js" />
     <Content Include="Web.config" />
     <Content Include="RegisterForm.aspx" />
     <Content Include="LoginForm.aspx" />
@@ -140,6 +141,24 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OnlineInventoryAndBilling.BL\OnlineInventoryAndBilling.BL.csproj">
+      <Project>{f7ae7173-8e90-438c-ab32-0612de1998ae}</Project>
+      <Name>OnlineInventoryAndBilling.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OnlineInventoryAndBilling.Common\OnlineInventoryAndBilling.Common.csproj">
+      <Project>{44c93fce-5d50-485c-b378-06bbbbf4a5d9}</Project>
+      <Name>OnlineInventoryAndBilling.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OnlineInventoryAndBilling.DAL\OnlineInventoryAndBilling.DAL.csproj">
+      <Project>{deeb8d63-215a-4c62-a5c5-1478093abfc7}</Project>
+      <Name>OnlineInventoryAndBilling.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OnlineInventoryAndBilling.Entity\OnlineInventoryAndBilling.Entity.csproj">
+      <Project>{d2794c71-7413-4594-93fa-47f07389bf32}</Project>
+      <Name>OnlineInventoryAndBilling.Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -6,6 +6,7 @@
 <head runat="server">
     <title>Welcome Page</title>
     <link rel="stylesheet" type="text/css" href="FullStyle.css" />
+    <script type="text/javascript" src="Validations.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     
     </asp:ContentPlaceHolder>
@@ -19,7 +20,7 @@
             </marquee>
 </span>
     </div >
-    <form  id="form1" runat="server">
+    <form  id="form1" runat="server" onsubmit="return vfun1()">
             <div class="Master"align="right">
                 <asp:HyperLink ID="HyperLink1" runat="server" Text="Home" NavigateUrl="~/HomeForm.aspx"></asp:HyperLink>
                 <asp:HyperLink ID="linkSignIn" runat="server" Text="Signin" NavigateUrl="~/LoginForm.aspx"></asp:HyperLink>

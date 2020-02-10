@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{98D03FDC-CED6-4CDF-902E-1EE52846240A}</ProjectGuid>
+    <ProjectGuid>{DEEB8D63-215A-4C62-A5C5-1478093ABFC7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OnlineInventoryandBIlling.DAL</RootNamespace>
-    <AssemblyName>OnlineInventoryandBIlling.DAL</AssemblyName>
+    <RootNamespace>OnlineInventoryAndBilling.DAL</RootNamespace>
+    <AssemblyName>OnlineInventoryAndBilling.DAL</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,10 +47,6 @@
     <Compile Include="UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OnlineInventoryAndBilling.Common\OnlineInventoryAndBilling.Common.csproj">
-      <Project>{44c93fce-5d50-485c-b378-06bbbbf4a5d9}</Project>
-      <Name>OnlineInventoryAndBilling.Common</Name>
-    </ProjectReference>
     <ProjectReference Include="..\OnlineInventoryAndBilling.Entity\OnlineInventoryAndBilling.Entity.csproj">
       <Project>{d2794c71-7413-4594-93fa-47f07389bf32}</Project>
       <Name>OnlineInventoryAndBilling.Entity</Name>

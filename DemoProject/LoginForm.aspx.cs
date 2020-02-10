@@ -1,4 +1,6 @@
 ﻿using System;
+using OnlineInventoryAndBilling.BL;
+using OnlineInventoryAndBilling.Entity;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,6 +11,7 @@ namespace DemoProject
 {
     public partial class WebForm3 : System.Web.UI.Page
     {
+        UserManager userManager = new UserManager();
         protected void Page_Load(object sender, EventArgs e)
         {
            
@@ -20,9 +23,8 @@ namespace DemoProject
 
         protected void Login_Button(object sender, EventArgs e)
         {
-            string name = uname1.Text, Password = password.Text;
-            Class1 class1 = new Class1();
-           if( class1.ToLogin(name, Password)==true)
+            User user = new User(uname.Text, password.Text);
+            if (userManager.ToLogin(user) == true)
             {
                 Response.Write("<script LANGUAGE='JavaScript'>alert('Login Successful')</script>");
             }
