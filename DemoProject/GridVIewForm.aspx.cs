@@ -66,7 +66,7 @@ namespace DemoProject
                 if (userManager.GetCustomerDetails(user) == true)
                 {
                     PopulateGridView();
-                    labelsuccess.Text = "New Data Added";
+                    labelsuccess.Text = "New Data Added" ;
                     labelfailure.Text = "";
                 }
             }
